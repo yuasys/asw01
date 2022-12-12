@@ -1,4 +1,10 @@
-# Getting Started with Create React App
+# カスタマイズ記録
+
+## TaiowindCSSの適用
+
+Tailwindcssの[公式サイト](https://tailwindcss.com/docs/guides/create-react-app)に従い、インストールと設定を行いました。
+
+## Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
