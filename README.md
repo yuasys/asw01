@@ -52,6 +52,33 @@ function App() {
 export default App;
 ```
 
+### 2. imgタグのsrc="<i>src path</i>" しても、画像の表示ができない
+
+|検索キーワード|react 画像 表示されない|[出典](http://shincode.info/2021/08/17/cant-display-image-with-react/)
+---- | ---- | ----
+
+【トラブル事例】
+
+```javascript
+<img src="../images/mountain.jpg" alt="" />
+```
+
+【解決事例】
+
+```javascript
+import React from "react";
+import bgImage from "../images/mountain.jpg";　//ここでパス指定して変数として利用する
+
+export const Title = () => {
+  return (
+    <div className="main-title">
+      <h1>Simple Trello</h1>
+      <img src={bgImage} />　　//srcに｛｝で入れ込む
+    </div>
+  );
+};
+```
+
 ## Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
