@@ -9,7 +9,7 @@ export default function App() {
       <BrowserRouter>
         <div className="container pb-2 mt-3 border-b mx-auto text-right text-xl">
           <Link
-            to={"/"}
+            to={"/home"}
             className="mr-4 p-2 hover:bg-violet-200 transition duration-300"
           >
             ホーム
@@ -22,7 +22,7 @@ export default function App() {
           </Link>
         </div>
         <Routes>
-          <Route path={"/"} element={<Home />} />
+          <Route path={"/home"} element={<Home />} />
           <Route path={"/asw01"} element={<Asw01 />} />
           <Route path={"/samples"} element={<Samples />} />
         </Routes>
