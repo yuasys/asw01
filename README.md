@@ -8,6 +8,45 @@ Tailwindcssの[公式サイト](https://tailwindcss.com/docs/guides/create-react
 
 最新バージョンの[ReactRouterの日本語解説サイト](https://ralacode.com/blog/post/how-to-use-react-router/)を参考にインストールと設定を行いました。
 
+## 各種エラーと解決方法の検索と解決手順
+
+### 1. ブラウザでリロードすると404エラーが発生する
+
+|検索キーワード|react-router-dom 404エラー|[出典](https://kubogen.com/web-programing-299/)
+---- | ---- | ----
+
+【解決手順】
+Routeタグのpathプロパティ値に一定の調整を加える（下記サンプルコード参照）
+
+```javascript
+{/*  -----------------
+        /src/App.jsx  
+     -----------------
+*/}
+
+import ‘./App.css’;
+import { BrowserRouter as Router, Routes, Route } from “react-router-dom”;
+import Home from “./Pages/Home”;
+import About from “./Pages/About”;
+import Error from “./Pages/Error”;
+
+const homeUrl = process.env.PUBLIC_URL;
+
+function App() {
+　　return (
+　　　　<Router>
+　　　　　　<Routes>
+　　　　　　　　<Route path={ homeUrl } element={<Home />} />
+　　　　　　　　<Route path={ homeUrl + “/about” } element={<About />} />
+　　　　　　　　<Route path=”*” element={<Error />} />
+　　　　　　</Routes>
+　　　　</Router>
+　　);
+}
+
+export default App;
+```
+
 ## Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
