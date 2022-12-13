@@ -1,5 +1,9 @@
 # カスタマイズ記録
 
+## このリポジトリの最初の状態
+
+[このサイト](https://qiita.com/tat_mae084/items/745761eee6cd1d42949d)を参考にして自動デプロイの仕組みを整えました。
+
 ## TaiowindCSSの適用
 
 Tailwindcssの[公式サイト](https://tailwindcss.com/docs/guides/create-react-app)に従い、インストールと設定を行いました。
