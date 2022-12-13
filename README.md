@@ -23,9 +23,10 @@ Tailwindcssの[公式サイト](https://tailwindcss.com/docs/guides/create-react
 Routeタグのpathプロパティ値に一定の調整を加える（下記サンプルコード参照）
 
 ```javascript
-{/*  -----------------
+{/*  ---------------------------------------------------
         /src/App.jsx  
-     -----------------
+        注意；'react-router-dom' version 6 必須
+     ---------------------------------------------------
 */}
 
 import ‘./App.css’;
