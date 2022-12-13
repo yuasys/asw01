@@ -3,6 +3,8 @@ import Home from "./pages/Home";
 import Asw01 from "./pages/Asw01";
 import Samples from "./pages/Samples";
 
+const homeUrl = process.env.PUBLIC_URL;
+
 export default function App() {
   return (
     <>
@@ -22,9 +24,9 @@ export default function App() {
           </Link>
         </div>
         <Routes>
-          <Route path={"/home"} element={<Home />} />
-          <Route path={"/asw01"} element={<Asw01 />} />
-          <Route path={"/samples"} element={<Samples />} />
+          <Route path={homeUrl + "/home"} element={<Home />} />
+          <Route path={homeUrl + "/asw01"} element={<Asw01 />} />
+          <Route path={homeUrl + "/samples"} element={<Samples />} />
         </Routes>
       </BrowserRouter>
     </>
