@@ -11,13 +11,13 @@ export default function App() {
       <BrowserRouter>
         <div className="container pb-2 mt-3 border-b mx-auto text-right text-xl">
           <Link
-            to={"/home"}
+            to={homeUrl + "/home"}
             className="mr-4 p-2 hover:bg-violet-200 transition duration-300"
           >
             ホーム
           </Link>
           <Link
-            to={"/Samples/"}
+            to={homeUrl + "/samples"}
             className="mr-4 p-2 hover:bg-violet-200 transition duration-300"
           >
             Samples
