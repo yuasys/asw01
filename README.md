@@ -4,6 +4,10 @@
 
 Tailwindcssの[公式サイト](https://tailwindcss.com/docs/guides/create-react-app)に従い、インストールと設定を行いました。
 
+## React Routerを適用し、複数ページを表示出来るようにする
+
+最新バージョンの[ReactRouterの日本語解説サイト](https://ralacode.com/blog/post/how-to-use-react-router/)を参考にインストールと設定を行いました。
+
 ## Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
