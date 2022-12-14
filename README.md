@@ -95,7 +95,7 @@ export const Title = () => {
  <div>
    <p>あれこれ</p>
  </div>
-``` 
+```
 
 ## Getting Started with Create React App
 
