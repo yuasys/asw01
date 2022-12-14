@@ -78,6 +78,21 @@ export const Title = () => {
   );
 };
 ```
+### 軽微な警告
+
+#### pタグは入れ子にできない
+
+　```javascript
+ //間違い pタグが入れ子になっている
+ <p>
+   <p>あれこれ</p>
+ </p>
+ 
+ //修正後
+ <div>
+   <p>あれこれ</p>
+ </div>
+ ```
 
 ## Getting Started with Create React App
 
