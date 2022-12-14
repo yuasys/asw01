@@ -20,7 +20,9 @@ Tailwindcssの[公式サイト](https://tailwindcss.com/docs/guides/create-react
 ---- | ---- | ----
 
 【解決手順】
-Routeタグのpathプロパティ値に一定の調整を加える（下記サンプルコード参照）
+Routeタグのpathプロパティ値に一定の調整を加える（下記サンプルコード参照）  
+※2022-12-15追記　この解決方法はローカルではOKであったが、github-Pagesでは解決できなかった。[より深い解説](https://maku.blog/p/9u8it5f/)を見つけたので、参考になる。  
+抜本的な解決方法をさらに追求する必要がある。[このサイト](https://kubogen.com/web-programing-299/)の手法はシンプルであり試してみたい。
 
 ```javascript
 {/*  ---------------------------------------------------
@@ -63,7 +65,8 @@ export default App;
 <img src="../images/mountain.jpg" alt="" />
 ```
 
-【解決事例】
+【解決事例】  
+※2022-12-15追記 下記の解決事例の他にも、この[サイト](https://morioh.com/p/b61b6054e0cf)にあるように多くの手段がある。実験してみた結果は良好であった。さらに、外部ファイルを使う方法のお応用として、Wordpressのメディア管理機能を活用して外部の画像置き場として活用するというアイデアを試したが、とても快適であった。
 
 ```javascript
 import React from "react";
